@@ -479,13 +479,6 @@ export function BestSpots({ onNavigate }: BestSpotsProps) {
                   alt={spot.name}
                   className="w-full h-full object-cover"
                 />
-                {/* Rating badge */}
-                <div 
-                  className="absolute top-4 right-4 text-white px-5 py-3 rounded-full shadow-lg"
-                  style={{ backgroundColor: '#7C80F6' }}
-                >
-                  <span className="text-xl">{spot.rating}</span>
-                </div>
                 {/* Delete button */}
                 <button
                   onClick={(e) => {

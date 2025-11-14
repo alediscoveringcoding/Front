@@ -274,8 +274,25 @@ export function EventDetail({ event, onBack, onSave }: EventDetailProps) {
 
           {/* Description Section */}
           <div className="max-w-7xl mx-auto mt-12">
-            <div className="bg-white rounded-3xl p-8 shadow-xl">
-              <h2 className="text-3xl mb-4" style={{ color: '#FF2E1E' }}>About this event</h2>
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
+              {/* Tags - only for certain events */}
+              {event.id === 2 && (
+                <div className="flex flex-wrap gap-3 mb-8">
+                  <span className="px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#FCFAF5', border: '1px solid #E5E7EB' }}>
+                    Design Exhibition
+                  </span>
+                  <span className="px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#FCFAF5', border: '1px solid #E5E7EB' }}>
+                    Contemporary Art
+                  </span>
+                  <span className="px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#FCFAF5', border: '1px solid #E5E7EB' }}>
+                    Chemical Industry
+                  </span>
+                  <span className="px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#FCFAF5', border: '1px solid #E5E7EB' }}>
+                    Research
+                  </span>
+                </div>
+              )}
+              
               {isEditing ? (
                 <textarea
                   value={editedEvent.description || ''}
@@ -285,9 +302,17 @@ export function EventDetail({ event, onBack, onSave }: EventDetailProps) {
                   style={{ borderColor: '#FC87F6' }}
                 />
               ) : (
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {event.description || 'Click Edit to add a description about this event. What can attendees expect? Who are the performers or speakers? What makes this event special?'}
-                </p>
+                <div className="text-lg text-gray-700 leading-relaxed space-y-6">
+                  {event.description ? (
+                    event.description.split('\n\n').map((paragraph, index) => (
+                      <p key={index} className="whitespace-pre-wrap">
+                        {paragraph}
+                      </p>
+                    ))
+                  ) : (
+                    'Click Edit to add a description about this event. What can attendees expect? Who are the performers or speakers? What makes this event special?'
+                  )}
+                </div>
               )}
             </div>
           </div>

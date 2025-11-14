@@ -41,7 +41,31 @@ export function Events({ onNavigate }: EventsProps) {
       date: '14-16 November 2025',
       location: 'Faber',
       image: 'https://images.unsplash.com/photo-1503095396549-807759245b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aGVhdGVyJTIwcGVyZm9ybWFuY2V8ZW58MXx8fHwxNzYzMDM1NTk3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      description: 'Three days of design workshops and exhibitions'
+      description: `Ce fel de practici de design sunt posibile atunci când accesul este restricționat, când cunoașterea este fragmentată și când o întreagă industrie rămâne parțial invizibilă?
+
+Cu aceste întrebări deschidem expoziția "Legături Chimice" în data de 26 septembrie la FABER, prin care investigăm industria chimică și potențialul designului de a interveni în procesele sale.
+
+În cadrul programului Design Signals, continuăm procesul început în 2023 și anul acesta ne îndreptăm atenția spre această industrie complexă și fragmentată. Fiind una dintre cele mai importante și controversate ramuri industriale, aceasta produce materialele care modelează lumea din jurul nostru. Cunoașterea sa a transformat societatea timp de secole, iar impactul său se reflectă atât asupra corpurilor noastre, cât și asupra mediilor în care trăim, unde unde poluarea și soluțiile pentru a o reduce se regăsesc în același cadru de inovație.
+
+Expoziția "Legături Chimice" investighează fluxurile de materiale, expertiză și forță de muncă în peisajul chimic, și ce perspective poate aduce designul în acest context. 🔬
+
+Expoziția reunește lucrări realizate de designeri și cercetători, alături de un raport sociologic semnat de Norbert Petrovici, interviuri cu experți din industrie și foști muncitori din fabrici, documentație fotografică din vizite pe teren și o investigație jurnalistică despre diverse perspective ale tranziției verzi, plecând de la trei studii de caz. Proiectele expuse abordează politici de mediu, standarde de reglementare, valorificarea resurselor locale, dar și fragmentarea infrastructurii industriale și absența legăturilor dintre componentele lanțului de producție.
+
+"Legături Chimice" nu oferă soluții, ci, prin practici contemporane de design, ridică întrebări, face vizibile părțile invizibile ale industriei și creează un cadru de discuții din care pot apărea noi perspective.
+
+Program:
+Vineri, 26 septembrie
+19:30 – Vernisajul expoziției
+20:00 – Concert Implant pentru Refuz
+
+🧪 La vernisajul expoziției, lansăm și conceptul "The Kitchen", un spațiu nou unde vei descoperi combinații chimice dedicate papilelor tale gustative, care va funcționa în tandem cu expoziția "Legături Chimice".
+
+Expoziția va rămâne deschisă până în data de 16 noiembrie și va putea fi vizitată de marți până vineri, între 12:00 – 20:00, sâmbătă între 11:00 – 22:00 și duminică între 11:00 – 18:00.
+
+Curator: Martina Muzi
+Designeri invitați: Gaia D'Arrigo, Anna Diljá Sigurðardóttir, Ro Perez Gayo, Audrey Large, Giacomo Nanni, Fidel Thomet, Julian Peschel (Krisenstab), Benedetta Pompili, Fabio Salvadori, Federico Santarini, Alexandra Spiridon, Alex Todirică, Susanna Tomassini, Andreea Tron
+
+Conceput și produs de FABER`
     },
     {
       id: 3,
@@ -149,7 +173,6 @@ export function Events({ onNavigate }: EventsProps) {
         {/* Header */}
         <header className="relative z-20 flex items-center justify-end px-12 py-10">
           <div className="flex items-center gap-4 mr-12">
-            <button className="text-white text-lg">EN</button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white px-8 py-4 rounded-full hover:opacity-90 transition-all text-lg"
@@ -229,26 +252,6 @@ export function Events({ onNavigate }: EventsProps) {
           </div>
         </div>
       </section>
-
-      {/* Add Event Button */}
-      <div className="container mx-auto px-8 py-8">
-        <button
-          onClick={() => setIsAddingEvent(!isAddingEvent)}
-          className="flex items-center gap-2 px-6 py-3 rounded-full transition-all shadow-lg"
-          style={{ backgroundColor: '#5ECCAD', color: 'white' }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = '#FBED4F';
-            e.currentTarget.style.color = '#1F2937';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = '#5ECCAD';
-            e.currentTarget.style.color = 'white';
-          }}
-        >
-          <Plus className="w-5 h-5" />
-          Add New Event
-        </button>
-      </div>
 
       {/* Add Event Form */}
       {isAddingEvent && (
@@ -356,7 +359,7 @@ export function Events({ onNavigate }: EventsProps) {
               </div>
               <div className="p-6">
                 <h3 className="text-2xl mb-3" style={{ color: '#7C80F6' }}>{event.title}</h3>
-                <div className="space-y-2 mb-4">
+                <div className="space-y-2">
                   <div className="flex items-center gap-2 text-gray-600">
                     <Calendar className="w-4 h-4" style={{ color: '#FF2E1E' }} />
                     <span>{event.date}</span>
@@ -366,9 +369,6 @@ export function Events({ onNavigate }: EventsProps) {
                     <span>{event.location}</span>
                   </div>
                 </div>
-                {event.description && (
-                  <p className="text-gray-600 leading-relaxed">{event.description}</p>
-                )}
               </div>
             </motion.div>
           ))}
