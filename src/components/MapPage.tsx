@@ -49,12 +49,12 @@ export function MapPage({ onNavigate }: MapPageProps) {
             </button>
             <button
               onClick={() => {
-                onNavigate('about');
+                onNavigate('events');
                 setIsMenuOpen(false);
               }}
               className="text-6xl text-white hover:text-yellow-300 transition-colors"
             >
-              About us
+              Events
             </button>
             <button
               onClick={() => {

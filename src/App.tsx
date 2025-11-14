@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Home } from './components/Home';
-import { AboutUs } from './components/AboutUs';
+import { Events } from './components/Events';
 import { BestSpots } from './components/BestSpots';
 import { MapPage } from './components/MapPage';
 import { Contact } from './components/Contact';
 
-export type Page = 'home' | 'about' | 'spots' | 'map' | 'contact';
+export type Page = 'home' | 'events' | 'spots' | 'map' | 'contact';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -15,8 +15,8 @@ export default function App() {
     switch (currentPage) {
       case 'home':
         return <Home onNavigate={setCurrentPage} />;
-      case 'about':
-        return <AboutUs onNavigate={setCurrentPage} />;
+      case 'events':
+        return <Events onNavigate={setCurrentPage} />;
       case 'spots':
         return <BestSpots onNavigate={setCurrentPage} />;
       case 'map':

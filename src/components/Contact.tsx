@@ -22,15 +22,13 @@ export function Contact({ onNavigate }: ContactProps) {
       </div>
 
       {/* Header */}
-      <header className="relative z-20 flex items-center justify-between px-8 py-6">
-        <div className="text-white text-5xl" style={{ fontFamily: 'system-ui, sans-serif' }}>
-          off
-        </div>
-        <div className="flex items-center gap-4">
+      <header className="relative z-20 flex items-center justify-end px-12 py-10">
+        <div className="flex items-center gap-4 mr-12">
           <button className="text-white text-lg">EN</button>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="bg-white text-gray-800 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors"
+            className="text-white px-8 py-4 rounded-full hover:opacity-90 transition-all text-lg"
+            style={{ backgroundColor: '#5ECCAD' }}
           >
             Menu
           </button>
@@ -39,12 +37,12 @@ export function Contact({ onNavigate }: ContactProps) {
 
       {/* Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-indigo-500/95 z-50 flex items-center justify-center">
+        <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm" style={{ backgroundColor: 'rgba(124, 128, 246, 0.5)' }}>
           <button
             onClick={() => setIsMenuOpen(false)}
-            className="absolute top-8 right-8 text-white text-xl hover:text-yellow-300"
+            className="absolute top-8 right-8 text-white text-6xl hover:text-yellow-300 transition-colors"
           >
-            ✕
+            ×
           </button>
           <nav className="flex flex-col items-center gap-6">
             <button
@@ -53,17 +51,19 @@ export function Contact({ onNavigate }: ContactProps) {
                 setIsMenuOpen(false);
               }}
               className="text-6xl text-white hover:text-yellow-300 transition-colors"
+              style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}
             >
               Home
             </button>
             <button
               onClick={() => {
-                onNavigate('about');
+                onNavigate('events');
                 setIsMenuOpen(false);
               }}
               className="text-6xl text-white hover:text-yellow-300 transition-colors"
+              style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}
             >
-              About
+              Events
             </button>
             <button
               onClick={() => {
@@ -71,6 +71,7 @@ export function Contact({ onNavigate }: ContactProps) {
                 setIsMenuOpen(false);
               }}
               className="text-6xl text-white hover:text-yellow-300 transition-colors"
+              style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}
             >
               Best spots
             </button>
@@ -80,12 +81,14 @@ export function Contact({ onNavigate }: ContactProps) {
                 setIsMenuOpen(false);
               }}
               className="text-6xl text-white hover:text-yellow-300 transition-colors"
+              style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}
             >
               Map
             </button>
             <button
               onClick={() => setIsMenuOpen(false)}
               className="text-6xl text-yellow-300 hover:text-white transition-colors"
+              style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}
             >
               Contact
             </button>
@@ -126,10 +129,10 @@ export function Contact({ onNavigate }: ContactProps) {
 
             <div className="pt-8">
               <a
-                href="mailto:hello@timisoara-off.com"
+                href="mailto:hello@timisoara.com"
                 className="text-4xl md:text-5xl hover:text-yellow-300 transition-colors inline-block"
               >
-                hello@leoff-paris.com
+                hello@timisoara.com
               </a>
             </div>
           </div>
@@ -138,7 +141,7 @@ export function Contact({ onNavigate }: ContactProps) {
 
       {/* Bottom large text */}
       <div className="absolute bottom-0 left-0 right-0 overflow-hidden pointer-events-none">
-        <div className="text-[200px] md:text-[300px] leading-none text-white opacity-30">
+        <div className="text-[200px] md:text-[300px] leading-none text-white opacity-30" style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}>
           contact
         </div>
       </div>
