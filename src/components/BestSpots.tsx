@@ -200,7 +200,6 @@ export function BestSpots({ onNavigate }: BestSpotsProps) {
         {/* Header */}
         <header className="relative z-20 flex items-center justify-end px-12 py-10">
           <div className="flex items-center gap-4 mr-12">
-            <button className="text-lg" style={{ color: '#FCFAF5' }}>EN</button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white px-8 py-4 rounded-full hover:opacity-90 transition-all text-lg"
@@ -516,12 +515,8 @@ export function BestSpots({ onNavigate }: BestSpotsProps) {
         <div className="container mx-auto px-8 relative z-10">
           <div className="flex justify-between items-start">
             <div className="text-gray-800 max-w-md">
-              <p className="text-xl mb-4">
-                Descoperă cele mai bune restaurante din Timișoara. O inițiativă dedicată iubitorilor de mâncare bună și experiențe culinare autentice.
-              </p>
             </div>
             <div className="text-right">
-              <p className="text-gray-800 mb-2">Follow us</p>
               <div className="flex gap-4 justify-end">
                 <button className="text-gray-800 hover:text-gray-600">Instagram</button>
                 <button className="text-gray-800 hover:text-gray-600">Map</button>

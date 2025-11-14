@@ -99,8 +99,8 @@ export function Home({ onNavigate }: HomeProps) {
         )}
 
         {/* Hero Content */}
-        <div className="relative z-10 flex items-center justify-center min-h-screen px-6">
-          <div className="text-center max-w-5xl">
+        <div className="relative z-10 flex items-center justify-center px-6 pt-32 pb-20" style={{ minHeight: '70vh' }}>
+          <div className="text-center max-w-4xl">
             <div className="mb-6 inline-block">
               <span className="text-lg md:text-xl tracking-widest uppercase" style={{ color: '#FBED4F' }}>Timișoara 2025</span>
             </div>
@@ -218,7 +218,7 @@ export function Home({ onNavigate }: HomeProps) {
         <div className="absolute inset-0 rounded-full blur-3xl opacity-20" style={{ backgroundColor: '#7C80F6' }} />
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-white text-4xl md:text-6xl mb-6 leading-tight">
+            <h2 className="text-white text-4xl md:text-6xl leading-tight text-center">
               100+ adrese alese special care te așteaptă să fie descoperite
             </h2>
             <p className="text-white/90 text-xl md:text-2xl mb-10 leading-relaxed">

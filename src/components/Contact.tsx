@@ -24,7 +24,6 @@ export function Contact({ onNavigate }: ContactProps) {
       {/* Header */}
       <header className="relative z-20 flex items-center justify-end px-12 py-10">
         <div className="flex items-center gap-4 mr-12">
-          <button className="text-white text-lg">EN</button>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-white px-8 py-4 rounded-full hover:opacity-90 transition-all text-lg"
@@ -117,13 +116,13 @@ export function Contact({ onNavigate }: ContactProps) {
 
             <div className="space-y-4 text-lg">
               <p>
-                A question, a request, a sweet word (we love those!) or just want to share your favorite spot in the capital with us?
+                Ai o întrebare, o solicitare, un cuvânt frumos (le adorăm!) sau vrei pur și simplu să ne împărtășești locul tău preferat din Timișoara?
               </p>
               <p>
-                We're always curious to discover your ideas, inspirations, and Parisian favorites.
+                Suntem mereu curioși să descoperim ideile tale, inspirațiile și locurile tale favorite din oraș.
               </p>
               <p>
-                We look forward to hearing from you!
+                Așteptăm cu drag să ne scrii!
               </p>
             </div>
 
