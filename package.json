@@ -1,5 +1,5 @@
 {
-      "name": "Ce facem diseara?",
+      "name": "ce-facem-diseara",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -34,7 +34,7 @@
             "cmdk": "^1.1.1",
             "embla-carousel-react": "^8.6.0",
             "input-otp": "^1.4.2",
-            "lucide-react": "^0.487.0",
+            "lucide-react": "^0.553.0",
             "motion": "*",
             "next-themes": "^0.4.6",
             "react": "^18.3.1",

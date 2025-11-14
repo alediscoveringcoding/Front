@@ -1,6 +1,5 @@
 import { Page } from '../App';
 import { useState } from 'react';
-import { motion } from 'motion/react';
 import { MapPin, Wine, Sparkles, ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 

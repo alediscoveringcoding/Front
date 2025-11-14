@@ -16,6 +16,12 @@ declare module 'lucide-react' {
   export const ChevronRightIcon: React.ForwardRefExoticComponent<any>;
   export const MoreHorizontal: React.ForwardRefExoticComponent<any>;
   export const GripVerticalIcon: React.ForwardRefExoticComponent<any>;
+  export const List: React.ForwardRefExoticComponent<any>;
+  export const MapPin: React.ForwardRefExoticComponent<any>;
+  export const Plus: React.ForwardRefExoticComponent<any>;
+  export const X: React.ForwardRefExoticComponent<any>;
+  export const Wine: React.ForwardRefExoticComponent<any>;
+  export const Sparkles: React.ForwardRefExoticComponent<any>;
 }
 
 declare module '@radix-ui/react-accordion' {
@@ -31,6 +37,8 @@ declare module '@radix-ui/react-alert-dialog' {
   import * as React from 'react';
   export const Root: React.ComponentType<any>;
   export const Trigger: React.ComponentType<any>;
+  export const Portal: React.ComponentType<any>;
+  export const Overlay: React.ComponentType<any>;
   export const Content: React.ComponentType<any>;
   export const Action: React.ComponentType<any>;
   export const Cancel: React.ComponentType<any>;
@@ -53,6 +61,7 @@ declare module '@radix-ui/react-avatar' {
 declare module '@radix-ui/react-checkbox' {
   import * as React from 'react';
   export const Root: React.ComponentType<any>;
+  export const Indicator: React.ComponentType<any>;
 }
 
 declare module '@radix-ui/react-collapsible' {
@@ -60,21 +69,27 @@ declare module '@radix-ui/react-collapsible' {
   export const Root: React.ComponentType<any>;
   export const Trigger: React.ComponentType<any>;
   export const Content: React.ComponentType<any>;
+  export const CollapsibleTrigger: React.ComponentType<any>;
+  export const CollapsibleContent: React.ComponentType<any>;
 }
 
 declare module '@radix-ui/react-context-menu' {
   import * as React from 'react';
   export const Root: React.ComponentType<any>;
   export const Trigger: React.ComponentType<any>;
+  export const Portal: React.ComponentType<any>;
   export const Content: React.ComponentType<any>;
   export const Item: React.ComponentType<any>;
+  export const ItemIndicator: React.ComponentType<any>;
   export const CheckboxItem: React.ComponentType<any>;
   export const RadioItem: React.ComponentType<any>;
+  export const RadioGroup: React.ComponentType<any>;
   export const Label: React.ComponentType<any>;
   export const Separator: React.ComponentType<any>;
   export const Sub: React.ComponentType<any>;
   export const SubContent: React.ComponentType<any>;
   export const SubTrigger: React.ComponentType<any>;
+  export const Group: React.ComponentType<any>;
 }
 
 declare module '@radix-ui/react-dialog' {
@@ -95,15 +110,19 @@ declare module '@radix-ui/react-dropdown-menu' {
   import * as React from 'react';
   export const Root: React.ComponentType<any>;
   export const Trigger: React.ComponentType<any>;
+  export const Portal: React.ComponentType<any>;
   export const Content: React.ComponentType<any>;
   export const Item: React.ComponentType<any>;
+  export const ItemIndicator: React.ComponentType<any>;
   export const CheckboxItem: React.ComponentType<any>;
+  export const RadioGroup: React.ComponentType<any>;
   export const RadioItem: React.ComponentType<any>;
   export const Label: React.ComponentType<any>;
   export const Separator: React.ComponentType<any>;
   export const Sub: React.ComponentType<any>;
   export const SubContent: React.ComponentType<any>;
   export const SubTrigger: React.ComponentType<any>;
+  export const Group: React.ComponentType<any>;
 }
 
 declare module '@radix-ui/react-hover-card' {
@@ -256,7 +275,14 @@ declare module 'embla-carousel-react' {
 
 declare module 'cmdk' {
   import * as React from 'react';
-  export const Command: React.ComponentType<any>;
+  export const Command: React.ComponentType<any> & {
+    Input: React.ComponentType<any>;
+    List: React.ComponentType<any>;
+    Empty: React.ComponentType<any>;
+    Group: React.ComponentType<any>;
+    Item: React.ComponentType<any>;
+    Separator: React.ComponentType<any>;
+  };
   export const CommandDialog: React.ComponentType<any>;
   export const CommandInput: React.ComponentType<any>;
   export const CommandList: React.ComponentType<any>;
@@ -294,6 +320,9 @@ declare module 'recharts' {
   export const PieChart: React.ComponentType<any>;
   export const Pie: React.ComponentType<any>;
   export const Cell: React.ComponentType<any>;
+  export interface LegendProps {
+    [key: string]: any;
+  }
 }
 
 declare module 'class-variance-authority' {
@@ -327,7 +356,16 @@ declare module 'react-resizable-panels' {
 
 declare module 'vaul' {
   import * as React from 'react';
-  export const Drawer: React.ComponentType<any>;
+  export const Drawer: React.ComponentType<any> & {
+    Root: React.ComponentType<any>;
+    Trigger: React.ComponentType<any>;
+    Portal: React.ComponentType<any>;
+    Close: React.ComponentType<any>;
+    Overlay: React.ComponentType<any>;
+    Content: React.ComponentType<any>;
+    Title: React.ComponentType<any>;
+    Description: React.ComponentType<any>;
+  };
   export const DrawerPortal: React.ComponentType<any>;
   export const DrawerOverlay: React.ComponentType<any>;
   export const DrawerTrigger: React.ComponentType<any>;
