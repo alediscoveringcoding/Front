@@ -479,16 +479,6 @@ export function BestSpots({ onNavigate }: BestSpotsProps) {
                   alt={spot.name}
                   className="w-full h-full object-cover"
                 />
-                {/* Delete button */}
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleDeleteSpot(spot.id);
-                  }}
-                  className="absolute top-4 left-4 bg-red-500 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-                >
-                  <X className="w-4 h-4" />
-                </button>
               </div>
             </div>
             

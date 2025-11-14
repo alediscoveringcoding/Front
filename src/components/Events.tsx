@@ -33,7 +33,7 @@ export function Events({ onNavigate }: EventsProps) {
       date: '15 November 2025',
       location: 'Restaurant Harmonia',
       image: 'https://images.unsplash.com/photo-1746003625451-fb19865e19b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBnYXRoZXJpbmclMjBwZW9wbGV8ZW58MXx8fHwxNzYzMTUxODU3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      description: 'Join us for the biggest social gathering of the season'
+      description: 'Seara de 15 noiembrie se deschide cu AfterSunset Social, o întâlnire vibrantă dedicată comunității urbane, în atmosfera elegantă a Restaurantului Harmonia. Muzică plăcută, conversații relaxate și un cadru cochet creează spațiul perfect pentru socializare după apus.'
     },
     {
       id: 2,
@@ -73,7 +73,7 @@ Conceput și produs de FABER`
       date: '19 November 2025',
       location: 'Teatrul Maghiar de Stat Timișoara',
       image: 'https://images.unsplash.com/photo-1503095396549-807759245b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aGVhdGVyJTIwcGVyZm9ybWFuY2V8ZW58MXx8fHwxNzYzMDM1NTk3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      description: 'A theatrical masterpiece exploring the life of Caravaggio'
+      description: 'Pe 19 noiembrie, scena Teatrului Maghiar se transformă într-un spectacol intens și dramatic inspirat de viața și arta lui Caravaggio. Jocurile de lumină, conflictul interior și frumusețea picturală sunt transpuse într-un spectacol teatral de mare forță emoțională.'
     },
     {
       id: 4,
@@ -81,7 +81,7 @@ Conceput și produs de FABER`
       date: '27 November 2025',
       location: 'TBA',
       image: 'https://images.unsplash.com/photo-1746003625451-fb19865e19b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBnYXRoZXJpbmclMjBwZW9wbGV8ZW58MXx8fHwxNzYzMTUxODU3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      description: 'Test your speed and skills in this exciting puzzle competition'
+      description: 'Tot pe 27 noiembrie, pasionații de puzzle se întrec în viteză și strategie în cadrul Timișoara Speed Puzzle Championship, un campionat care pune la încercare atenția, dexteritatea și spiritul competitiv.'
     },
     {
       id: 5,
@@ -89,7 +89,7 @@ Conceput și produs de FABER`
       date: '27 November 2025',
       location: 'TBA',
       image: 'https://images.unsplash.com/photo-1746003625451-fb19865e19b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBnYXRoZXJpbmclMjBwZW9wbGV8ZW58MXx8fHwxNzYzMTUxODU3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      description: 'Conference on neuroscience and mental health'
+      description: 'În aceeași zi, un eveniment dedicat neuroștiinței și sănătății mentale aduce împreună specialiști și publicul larg pentru discuții despre echilibrul interior, funcționarea creierului și importanța îngrijirii minții în lumea modernă.'
     },
     {
       id: 6,
@@ -97,7 +97,7 @@ Conceput și produs de FABER`
       date: '28 November 2025',
       location: 'FIIT',
       image: 'https://images.unsplash.com/photo-1631061434620-db65394197e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXZlJTIwbXVzaWMlMjBjb25jZXJ0fGVufDF8fHx8MTc2MzExNzI4NHww&ixlib=rb-4.1.0&q=80&w=1080',
-      description: 'Live performance by Vlad Corb'
+      description: 'Pe 28 noiembrie, Vlad Corb urcă pe scena FIIT, oferind un concert plin de emoție, sensibilitate și energie artistică, într-un cadru dedicat comunității creative tinere din Timișoara.'
     },
     {
       id: 7,
@@ -105,7 +105,7 @@ Conceput și produs de FABER`
       date: '28 November 2025',
       location: 'TBA',
       image: 'https://images.unsplash.com/photo-1746003625451-fb19865e19b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBnYXRoZXJpbmclMjBwZW9wbGV8ZW58MXx8fHwxNzYzMTUxODU3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      description: 'Elegant Viennese Ball with classical music and dance'
+      description: 'Seara de 28 noiembrie continuă cu rafinament la Balul Vienez, un eveniment elegant, cu valsuri, ținute somptuoase și atmosfera clasică a balurilor imperiale.'
     },
     {
       id: 8,
@@ -113,7 +113,7 @@ Conceput și produs de FABER`
       date: '6 December 2025',
       location: 'Cinema Timis',
       image: 'https://images.unsplash.com/photo-1631061434620-db65394197e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXZlJTIwbXVzaWMlMjBjb25jZXJ0fGVufDF8fHx8MTc2MzExNzI4NHww&ixlib=rb-4.1.0&q=80&w=1080',
-      description: 'Christmas concert screening featuring André Rieu'
+      description: 'Spiritul sărbătorilor se aprinde pe 6 decembrie, când Cinema Timiș proiectează Concertul de Crăciun André Rieu, o experiență muzicală plină de magie, armonie și emoție festivă.'
     },
     {
       id: 9,
@@ -121,7 +121,7 @@ Conceput și produs de FABER`
       date: '8 December 2025',
       location: 'TBA',
       image: 'https://images.unsplash.com/photo-1503095396549-807759245b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aGVhdGVyJTIwcGVyZm9ybWFuY2V8ZW58MXx8fHwxNzYzMDM1NTk3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      description: 'Stand-up comedy show with Sorin Pârcălab and more'
+      description: 'Încheierea perioadei vine cu un strop de umor: Sorin Pârcălab și alți comedianți aduc o seară de stand-up savuroasă, perfectă pentru relaxare și bună dispoziție.'
     }
   ]);
 
@@ -136,14 +136,14 @@ Conceput și produs de FABER`
     }
   };
 
-  const handleDeleteEvent = (id: number) => {
-    setEvents(events.filter(event => event.id !== id));
-  };
-
   const handleSaveEvent = (updatedEvent: Event) => {
     setEvents(events.map(e => 
       e.id === updatedEvent.id ? updatedEvent : e
     ));
+  };
+
+  const handleDeleteEvent = (id: number) => {
+    setEvents(events.filter(e => e.id !== id));
   };
 
   // Show detail view if an event is selected
@@ -346,16 +346,6 @@ Conceput și produs de FABER`
                   alt={event.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleDeleteEvent(event.id);
-                  }}
-                  className="absolute top-4 right-4 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-                  style={{ backgroundColor: '#FF2E1E', color: 'white' }}
-                >
-                  <X className="w-4 h-4" />
-                </button>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl mb-3" style={{ color: '#7C80F6' }}>{event.title}</h3>

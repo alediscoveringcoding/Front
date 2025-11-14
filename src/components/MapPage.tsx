@@ -25,12 +25,10 @@ export function MapPage({ onNavigate }: MapPageProps) {
     { id: 4, name: 'Little Hanoi', lat: 45.7561, lng: 21.2269, type: 'restaurant', cuisine: 'Vietnamese', rating: 9 },
     { id: 5, name: 'Riyo', lat: 45.7575, lng: 21.2301, type: 'restaurant', cuisine: 'Japanese', rating: 9.5 },
     { id: 6, name: 'La Focacceria', lat: 45.7550, lng: 21.2280, type: 'restaurant', cuisine: 'Italian', rating: 9 },
-    { id: 7, name: 'Sabres', lat: 45.7520, lng: 21.2240, type: 'restaurant', cuisine: 'Mediterranean', rating: 9.5 },
-    { id: 8, name: 'Vinarium Wine Bar', lat: 45.7545, lng: 21.2265, type: 'wine-bar', cuisine: 'Wine Bar', rating: 9 },
-    { id: 9, name: 'Casa Bunicii', lat: 45.7535, lng: 21.2295, type: 'restaurant', cuisine: 'Romanian', rating: 9.5 },
-    { id: 10, name: "D'Arc Restaurant", lat: 45.7580, lng: 21.2250, type: 'fine-dining', cuisine: 'Fine Dining', rating: 9 },
-    { id: 11, name: 'Scârț Loc Lejer', lat: 45.7560, lng: 21.2275, type: 'bar', cuisine: 'Bar', rating: 9.5 },
-    { id: 12, name: 'Teatro Restaurant', lat: 45.7540, lng: 21.2260, type: 'fine-dining', cuisine: 'Fine Dining', rating: 9 }
+    { id: 7, name: 'Hype culture', lat: 45.7520, lng: 21.2240, type: 'restaurant', cuisine: 'Modern', rating: 9 },
+    { id: 8, name: 'Eat like a man', lat: 45.7545, lng: 21.2265, type: 'steakhouse', cuisine: 'Steakhouse', rating: 9.5 },
+    { id: 9, name: 'Why pizza', lat: 45.7535, lng: 21.2295, type: 'restaurant', cuisine: 'Pizza', rating: 9 },
+    { id: 10, name: 'Taverna racilor', lat: 45.7560, lng: 21.2275, type: 'restaurant', cuisine: 'Seafood', rating: 9.5 }
   ]);
 
   return (
