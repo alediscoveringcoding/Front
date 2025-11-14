@@ -1,1 +1,11 @@
-# repo-template
+
+  # Clone Existing Website
+
+  This is a code bundle for Clone Existing Website. The original project is available at https://www.figma.com/design/fZv442difZADl2vP8ixWu2/Clone-Existing-Website.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  
