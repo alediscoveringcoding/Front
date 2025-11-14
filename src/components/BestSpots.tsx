@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Page } from '../App';
-import { List, MapPin, Plus, X } from 'lucide-react';
+import { List, MapPin } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { RestaurantDetail } from './RestaurantDetail';
 
@@ -158,20 +158,6 @@ export function BestSpots({ onNavigate }: BestSpotsProps) {
       website: ''
     }
   ]);
-  const [isAddingSpot, setIsAddingSpot] = useState(false);
-  const [newSpot, setNewSpot] = useState({ name: '', image: '', rating: '', description: '' });
-
-  const handleAddSpot = () => {
-    if (newSpot.name && newSpot.image && newSpot.rating && newSpot.description) {
-      setRestaurants([...restaurants, { ...newSpot, id: restaurants.length + 1 }]);
-      setNewSpot({ name: '', image: '', rating: '', description: '' });
-      setIsAddingSpot(false);
-    }
-  };
-
-  const handleDeleteSpot = (id: number) => {
-    setRestaurants(restaurants.filter(spot => spot.id !== id));
-  };
 
   const handleSaveRestaurant = (updatedRestaurant: Restaurant) => {
     setRestaurants(restaurants.map(r => 
@@ -399,66 +385,6 @@ export function BestSpots({ onNavigate }: BestSpotsProps) {
           </button>
         </div>
       </div>
-
-      {/* Add Spot Button */}
-      <div className="container mx-auto px-8 mb-8">
-        <button
-          onClick={() => setIsAddingSpot(!isAddingSpot)}
-          className="flex items-center gap-2 px-4 py-2 bg-teal-400 text-white rounded-full hover:bg-teal-500 transition-colors"
-        >
-          <Plus className="w-5 h-5" />
-          Add New Spot
-        </button>
-      </div>
-
-      {/* Add Spot Form */}
-      {isAddingSpot && (
-        <div className="container mx-auto px-8 mb-8 max-w-2xl">
-          <div className="bg-white rounded-3xl p-6 shadow-lg border-2 border-gray-200">
-            <div className="flex justify-between items-center mb-4">
-              <h3 className="text-2xl text-gray-800">Add New Spot</h3>
-              <button onClick={() => setIsAddingSpot(false)}>
-                <X className="w-6 h-6" />
-              </button>
-            </div>
-            <div className="space-y-4">
-              <input
-                type="text"
-                placeholder="Name"
-                value={newSpot.name}
-                onChange={(e) => setNewSpot({ ...newSpot, name: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg"
-              />
-              <input
-                type="text"
-                placeholder="Image URL"
-                value={newSpot.image}
-                onChange={(e) => setNewSpot({ ...newSpot, image: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg"
-              />
-              <input
-                type="text"
-                placeholder="Rating (e.g., 9/10)"
-                value={newSpot.rating}
-                onChange={(e) => setNewSpot({ ...newSpot, rating: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg"
-              />
-              <textarea
-                placeholder="Description"
-                value={newSpot.description}
-                onChange={(e) => setNewSpot({ ...newSpot, description: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg min-h-[100px]"
-              />
-              <button
-                onClick={handleAddSpot}
-                className="w-full bg-teal-400 text-white py-3 rounded-lg hover:bg-teal-500 transition-colors"
-              >
-                Add Spot
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Spots Grid */}
       <div className="container mx-auto px-8 py-8 grid md:grid-cols-2 lg:grid-cols-3 gap-12 pb-32">

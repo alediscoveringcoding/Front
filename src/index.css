@@ -74,15 +74,12 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-red-500: oklch(.637 .237 25.331);
     --color-yellow-300: oklch(.905 .182 98.111);
-    --color-teal-400: oklch(.777 .152 181.912);
-    --color-teal-500: oklch(.704 .14 182.503);
     --color-indigo-500: oklch(.585 .233 277.117);
     --color-indigo-600: oklch(.511 .262 276.966);
     --color-fuchsia-400: oklch(.74 .238 322.16);
     --color-pink-400: oklch(.718 .202 349.761);
     --color-pink-500: oklch(.656 .241 354.308);
     --color-gray-100: oklch(.967 .003 264.542);
-    --color-gray-200: oklch(.928 .006 264.531);
     --color-gray-300: oklch(.872 .01 258.338);
     --color-gray-500: oklch(.551 .027 264.364);
     --color-gray-600: oklch(.446 .03 256.802);
@@ -999,10 +996,6 @@
     border-bottom-width: 4px;
   }
 
-  .border-gray-200 {
-    border-color: var(--color-gray-200);
-  }
-
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
@@ -1037,10 +1030,6 @@
 
   .bg-indigo-500 {
     background-color: var(--color-indigo-500);
-  }
-
-  .bg-teal-400 {
-    background-color: var(--color-teal-400);
   }
 
   .bg-transparent {
@@ -1517,12 +1506,6 @@
   @media (hover: hover) {
     .hover\:bg-indigo-600:hover {
       background-color: var(--color-indigo-600);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-teal-500:hover {
-      background-color: var(--color-teal-500);
     }
   }
 
