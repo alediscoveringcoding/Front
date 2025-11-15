@@ -141,60 +141,63 @@ export function Home({ onNavigate }: HomeProps) {
         <div className="container mx-auto px-20 max-w-7xl">
           <div className="grid grid-cols-3 gap-12">
             {/* Feature 1 */}
-            <div className="group cursor-pointer text-center" onClick={() => onNavigate('events')}>
+            <div className="group cursor-pointer" onClick={() => onNavigate('events')}>
               <div className="relative overflow-hidden rounded-3xl mb-6" style={{ height: '400px' }}>
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1666032119084-82351976a922?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZWxlZ2FudHxlbnwxfHx8fDE3NjMxMzY5MTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Elegant dining"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white">
-                  <Wine className="w-8 h-8" />
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
-              <h3 className="text-3xl text-gray-900 mb-3">Events</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Descoperă cele mai tari evenimente culinare și petreceri din Timișoara
-              </p>
+              <div className="text-center">
+                <h3 className="text-4xl mb-4 text-gray-900" style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}>
+                  Events
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed max-w-sm mx-auto">
+                  Descoperă cele mai tari evenimente culinare și petreceri din Timișoara
+                </p>
+              </div>
             </div>
 
             {/* Feature 2 */}
-            <div className="group cursor-pointer text-center" onClick={() => onNavigate('spots')}>
+            <div className="group cursor-pointer" onClick={() => onNavigate('spots')}>
               <div className="relative overflow-hidden rounded-3xl mb-6" style={{ height: '400px' }}>
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aW5lJTIwZ2xhc3Nlc3xlbnwxfHx8fDE3NjMxMzY5MTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Wine selection"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white">
-                  <Sparkles className="w-8 h-8" />
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
-              <h3 className="text-3xl text-gray-900 mb-3">Restaurants</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Cele mai bune restaurante și locuri de mâncare din Timișoara
-              </p>
+              <div className="text-center">
+                <h3 className="text-4xl mb-4 text-gray-900" style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}>
+                  Restaurants
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed max-w-sm mx-auto">
+                  Cele mai bune restaurante și locuri de mâncare din Timișoara
+                </p>
+              </div>
             </div>
 
             {/* Feature 3 */}
-            <div className="group cursor-pointer text-center" onClick={() => onNavigate('map')}>
+            <div className="group cursor-pointer" onClick={() => onNavigate('map')}>
               <div className="relative overflow-hidden rounded-3xl mb-6" style={{ height: '400px' }}>
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1651209315802-12190ccfee26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5lJTIwZGluaW5nJTIwdGFibGV8ZW58MXx8fHwxNzYzMDQwNzE5fDA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Fine dining"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white">
-                  <MapPin className="w-8 h-8" />
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
-              <h3 className="text-3xl text-gray-900 mb-3">Interactive Map</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Navighează orașul cu ușurință folosind harta noastră interactivă
-              </p>
+              <div className="text-center">
+                <h3 className="text-4xl mb-4 text-gray-900" style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}>
+                  Interactive Map
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed max-w-sm mx-auto">
+                  Navighează orașul cu ușurință folosind harta noastră interactivă
+                </p>
+              </div>
             </div>
           </div>
         </div>
