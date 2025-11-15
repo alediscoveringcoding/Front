@@ -76,7 +76,6 @@
     --color-yellow-300: oklch(.905 .182 98.111);
     --color-indigo-500: oklch(.585 .233 277.117);
     --color-indigo-600: oklch(.511 .262 276.966);
-    --color-purple-400: oklch(.714 .203 305.504);
     --color-fuchsia-400: oklch(.74 .238 322.16);
     --color-pink-400: oklch(.718 .202 349.761);
     --color-pink-500: oklch(.656 .241 354.308);
@@ -426,10 +425,6 @@
     top: 50%;
   }
 
-  .top-1\/4 {
-    top: 25%;
-  }
-
   .top-8 {
     top: calc(var(--spacing) * 8);
   }
@@ -440,10 +435,6 @@
 
   .right-0 {
     right: calc(var(--spacing) * 0);
-  }
-
-  .right-1\/4 {
-    right: 25%;
   }
 
   .right-8 {
@@ -466,10 +457,6 @@
     bottom: calc(var(--spacing) * 0);
   }
 
-  .bottom-1\/4 {
-    bottom: 25%;
-  }
-
   .bottom-4 {
     bottom: calc(var(--spacing) * 4);
   }
@@ -490,16 +477,8 @@
     left: 50%;
   }
 
-  .left-1\/4 {
-    left: 25%;
-  }
-
   .left-4 {
     left: calc(var(--spacing) * 4);
-  }
-
-  .left-6 {
-    left: calc(var(--spacing) * 6);
   }
 
   .-z-0 {
@@ -604,6 +583,10 @@
     margin-bottom: calc(var(--spacing) * 12);
   }
 
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
+
   .mb-32 {
     margin-bottom: calc(var(--spacing) * 32);
   }
@@ -626,14 +609,6 @@
 
   .aspect-\[4\/3\] {
     aspect-ratio: 4 / 3;
-  }
-
-  .aspect-square {
-    aspect-ratio: 1;
-  }
-
-  .h-1 {
-    height: calc(var(--spacing) * 1);
   }
 
   .h-3 {
@@ -716,6 +691,10 @@
     min-height: 80px;
   }
 
+  .min-h-\[80vh\] {
+    min-height: 80vh;
+  }
+
   .min-h-\[100px\] {
     min-height: 100px;
   }
@@ -794,10 +773,6 @@
 
   .w-\[500px\] {
     width: 500px;
-  }
-
-  .w-\[600px\] {
-    width: 600px;
   }
 
   .w-\[1200px\] {
@@ -889,6 +864,10 @@
 
   .cursor-pointer {
     cursor: pointer;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .flex-col {
@@ -1110,11 +1089,6 @@
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
 
-  .bg-gradient-to-r {
-    --tw-gradient-position: to right in oklab;
-    background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-
   .bg-gradient-to-t {
     --tw-gradient-position: to top in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
@@ -1136,19 +1110,8 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .from-transparent {
-    --tw-gradient-from: transparent;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-
   .via-pink-500 {
     --tw-gradient-via: var(--color-pink-500);
-    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-via-stops);
-  }
-
-  .via-purple-400 {
-    --tw-gradient-via: var(--color-purple-400);
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
@@ -1208,12 +1171,12 @@
     padding-inline: calc(var(--spacing) * 8);
   }
 
-  .px-10 {
-    padding-inline: calc(var(--spacing) * 10);
-  }
-
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
+  }
+
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
   }
 
   .py-1 {
@@ -1252,10 +1215,6 @@
     padding-block: calc(var(--spacing) * 16);
   }
 
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
-  }
-
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
   }
@@ -1264,16 +1223,12 @@
     padding-block: calc(var(--spacing) * 32);
   }
 
+  .py-40 {
+    padding-block: calc(var(--spacing) * 40);
+  }
+
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
-  }
-
-  .pt-32 {
-    padding-top: calc(var(--spacing) * 32);
-  }
-
-  .pb-20 {
-    padding-bottom: calc(var(--spacing) * 20);
   }
 
   .pb-32 {
@@ -1320,6 +1275,11 @@
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+
+  .text-9xl {
+    font-size: var(--text-9xl);
+    line-height: var(--tw-leading, var(--text-9xl--line-height));
   }
 
   .text-lg {
@@ -1456,14 +1416,6 @@
 
   .opacity-30 {
     opacity: .3;
-  }
-
-  .opacity-40 {
-    opacity: .4;
-  }
-
-  .opacity-50 {
-    opacity: .5;
   }
 
   .opacity-90 {
@@ -1655,21 +1607,9 @@
     outline-style: none;
   }
 
-  @media (width >= 40rem) {
-    .sm\:flex-row {
-      flex-direction: row;
-    }
-  }
-
   @media (width >= 48rem) {
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:grid-cols-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 
@@ -1694,38 +1634,6 @@
   @media (width >= 48rem) {
     .md\:py-20 {
       padding-block: calc(var(--spacing) * 20);
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:py-24 {
-      padding-block: calc(var(--spacing) * 24);
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:py-32 {
-      padding-block: calc(var(--spacing) * 32);
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:py-40 {
-      padding-block: calc(var(--spacing) * 40);
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:text-2xl {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:text-3xl {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
 
@@ -1786,19 +1694,6 @@
   @media (width >= 64rem) {
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-
-  @media (width >= 64rem) {
-    .lg\:gap-12 {
-      gap: calc(var(--spacing) * 12);
-    }
-  }
-
-  @media (width >= 64rem) {
-    .lg\:text-9xl {
-      font-size: var(--text-9xl);
-      line-height: var(--tw-leading, var(--text-9xl--line-height));
     }
   }
 }
