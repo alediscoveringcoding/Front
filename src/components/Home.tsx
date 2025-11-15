@@ -138,7 +138,7 @@ export function Home({ onNavigate }: HomeProps) {
 
       {/* Features Grid */}
       <section className="py-32 bg-white">
-        <div className="container mx-auto px-20 max-w-7xl">
+        <div className="max-w-7xl mx-auto px-20">
           <div className="grid grid-cols-3 gap-12">
             {/* Feature 1 */}
             <div className="group cursor-pointer" onClick={() => onNavigate('events')}>
@@ -207,7 +207,7 @@ export function Home({ onNavigate }: HomeProps) {
       <section className="relative py-40 overflow-hidden flex items-center justify-center" style={{
         background: 'linear-gradient(135deg, #7C80F6 0%, #FC87F6 50%, #FF2E1E 100%)'
       }}>
-        <div className="max-w-4xl mx-auto text-center px-20">
+        <div className="max-w-4xl text-center px-20">
           <h2 className="text-white text-7xl mb-8 leading-tight" style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}>
             Descoperă Timișoara<br />
             cu noi
@@ -222,7 +222,7 @@ export function Home({ onNavigate }: HomeProps) {
       <footer className="relative py-24 overflow-hidden flex items-center justify-center" style={{
         backgroundColor: '#1F2937'
       }}>
-        <div className="max-w-3xl mx-auto text-center px-20">
+        <div className="max-w-3xl text-center px-20">
           <div className="mb-10">
             <span className="text-7xl" style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900, color: '#FBED4F' }}>
               CeFacemDiseara?
