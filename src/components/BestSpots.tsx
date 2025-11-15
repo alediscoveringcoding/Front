@@ -400,21 +400,19 @@ export function BestSpots({ onNavigate }: BestSpotsProps) {
             className="relative group cursor-pointer flex flex-col items-center"
             onClick={() => setSelectedRestaurant(spot)}
           >
-            <div className="relative w-full max-w-sm mx-auto">
-              {/* Organic blob shape with image */}
-              <div className="relative aspect-[4/3] rounded-[50%] overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105">
-                <ImageWithFallback
-                  src={spot.image}
-                  alt={spot.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            {/* Organic blob shape with image */}
+            <div className="relative aspect-[4/3] w-full max-w-sm rounded-[50%] overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105">
+              <ImageWithFallback
+                src={spot.image}
+                alt={spot.name}
+                className="w-full h-full object-cover"
+              />
             </div>
             
             {/* Text content centered */}
-            <div className="mt-6 text-center max-w-sm mx-auto px-4">
-              <h3 className="text-3xl mb-3" style={{ color: '#4AA5FF' }}>{spot.name}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{spot.description}</p>
+            <div className="mt-6 text-center">
+              <h3 className="text-3xl mb-2" style={{ color: '#4AA5FF' }}>{spot.name}</h3>
+              <p className="text-gray-600 leading-relaxed">{spot.description}</p>
             </div>
           </motion.div>
         ))}
