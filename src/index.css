@@ -583,10 +583,6 @@
     margin-bottom: calc(var(--spacing) * 16);
   }
 
-  .mb-32 {
-    margin-bottom: calc(var(--spacing) * 32);
-  }
-
   .flex {
     display: flex;
   }
@@ -1610,12 +1606,6 @@
   @media (width >= 48rem) {
     .md\:px-12 {
       padding-inline: calc(var(--spacing) * 12);
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:px-20 {
-      padding-inline: calc(var(--spacing) * 20);
     }
   }
 

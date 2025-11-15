@@ -184,8 +184,8 @@ export function BestSpots({ onNavigate }: BestSpotsProps) {
       {/* Hero Section with Multiple Organic Images */}
       <section className="relative overflow-hidden" style={{ backgroundColor: '#FC87F6' }}>
         {/* Header */}
-        <header className="relative z-20 flex items-center justify-end px-12 py-10">
-          <div className="flex items-center gap-4 mr-12">
+        <header className="relative z-20 flex items-center justify-end px-20 py-10">
+          <div className="flex items-center gap-4">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white px-8 py-4 rounded-full hover:opacity-90 transition-all text-lg"
@@ -196,106 +196,109 @@ export function BestSpots({ onNavigate }: BestSpotsProps) {
           </div>
         </header>
 
-        {/* Organic Shaped Images */}
-        <div className="relative h-80 mb-32">
-          {/* Image 1 - Top Left */}
-          <div 
-            className="absolute w-96 h-64 overflow-hidden"
-            style={{
-              top: '0',
-              left: '5%',
-              clipPath: 'ellipse(45% 50% at 50% 50%)',
-              transform: 'rotate(-5deg)'
-            }}
-          >
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1642653393460-15e0e8062b25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjByZXN0YXVyYW50JTIwdGFibGV8ZW58MXx8fHwxNzYzMTU2NzMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Restaurant scene"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Image 2 - Top Center */}
-          <div 
-            className="absolute w-80 h-56 overflow-hidden"
-            style={{
-              top: '-40px',
-              left: '32%',
-              clipPath: 'ellipse(48% 52% at 50% 50%)',
-              transform: 'rotate(8deg)'
-            }}
-          >
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1676300185004-c31cf62d3bc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGlzaCUyMGdvdXJtZXR8ZW58MXx8fHwxNzYzMTU2NzI5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Gourmet dish"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Image 3 - Top Right */}
-          <div 
-            className="absolute w-96 h-60 overflow-hidden"
-            style={{
-              top: '20px',
-              right: '8%',
-              clipPath: 'ellipse(47% 53% at 50% 50%)',
-              transform: 'rotate(-3deg)'
-            }}
-          >
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1632840766469-9897a845c514?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwd2luZSUyMGRpbmluZ3xlbnwxfHx8fDE3NjMxNTY3Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Wine and dining"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Image 4 - Bottom Right */}
-          <div 
-            className="absolute w-80 h-64 overflow-hidden"
-            style={{
-              bottom: '-100px',
-              right: '15%',
-              clipPath: 'ellipse(50% 48% at 50% 50%)',
-              transform: 'rotate(5deg)'
-            }}
-          >
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1512654448383-47b2fe224e44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcHBldGl6ZXIlMjBwbGF0ZXxlbnwxfHx8fDE3NjMxNTY3Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Appetizer"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-
-        {/* Pink Section with Title */}
-        <div className="pb-32 px-12 md:px-20">
-          <h1 
-            className="text-7xl md:text-9xl tracking-tight"
-            style={{ 
-              fontFamily: 'Retail Heavy, Montserrat, sans-serif',
-              fontWeight: 900,
-              lineHeight: '0.9'
-            }}
-          >
-            <span className="text-white">Best</span>
-            <br />
-            <span className="relative inline-block">
-              <span className="text-white relative z-10">spots</span>
-              <span 
-                className="absolute -bottom-2 left-0 w-full h-6 -z-0"
-                style={{ backgroundColor: '#FBED4F' }}
+        {/* Container for centered content */}
+        <div className="max-w-7xl mx-auto px-20">
+          {/* Organic Shaped Images */}
+          <div className="relative h-80 mb-12">
+            {/* Image 1 - Top Left */}
+            <div 
+              className="absolute w-96 h-64 overflow-hidden"
+              style={{
+                top: '0',
+                left: '5%',
+                clipPath: 'ellipse(45% 50% at 50% 50%)',
+                transform: 'rotate(-5deg)'
+              }}
+            >
+              <ImageWithFallback
+                src="https://images.unsplash.com/photo-1642653393460-15e0e8062b25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjByZXN0YXVyYW50JTIwdGFibGV8ZW58MXx8fHwxNzYzMTU2NzMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Restaurant scene"
+                className="w-full h-full object-cover"
               />
-            </span>
-            <span className="text-white"> in</span>
-            <br />
-            <span className="relative inline-block">
-              <span className="relative z-10" style={{ color: '#5ECCAD' }}>Timișoara</span>
-              <span 
-                className="absolute -bottom-2 left-0 w-full h-6 -z-0"
-                style={{ backgroundColor: '#4AA5FF' }}
+            </div>
+
+            {/* Image 2 - Top Center */}
+            <div 
+              className="absolute w-80 h-56 overflow-hidden"
+              style={{
+                top: '-40px',
+                left: '50%',
+                transform: 'translateX(-50%) rotate(8deg)',
+                clipPath: 'ellipse(48% 52% at 50% 50%)'
+              }}
+            >
+              <ImageWithFallback
+                src="https://images.unsplash.com/photo-1676300185004-c31cf62d3bc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGlzaCUyMGdvdXJtZXR8ZW58MXx8fHwxNzYzMTU2NzI5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Gourmet dish"
+                className="w-full h-full object-cover"
               />
-            </span>
-          </h1>
+            </div>
+
+            {/* Image 3 - Top Right */}
+            <div 
+              className="absolute w-96 h-60 overflow-hidden"
+              style={{
+                top: '20px',
+                right: '8%',
+                clipPath: 'ellipse(47% 53% at 50% 50%)',
+                transform: 'rotate(-3deg)'
+              }}
+            >
+              <ImageWithFallback
+                src="https://images.unsplash.com/photo-1632840766469-9897a845c514?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwd2luZSUyMGRpbmluZ3xlbnwxfHx8fDE3NjMxNTY3Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Wine and dining"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Image 4 - Bottom Right */}
+            <div 
+              className="absolute w-80 h-64 overflow-hidden"
+              style={{
+                bottom: '-100px',
+                right: '15%',
+                clipPath: 'ellipse(50% 48% at 50% 50%)',
+                transform: 'rotate(5deg)'
+              }}
+            >
+              <ImageWithFallback
+                src="https://images.unsplash.com/photo-1512654448383-47b2fe224e44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcHBldGl6ZXIlMjBwbGF0ZXxlbnwxfHx8fDE3NjMxNTY3Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Appetizer"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Pink Section with Title */}
+          <div className="pb-32 flex justify-center">
+            <h1 
+              className="text-9xl tracking-tight text-center"
+              style={{ 
+                fontFamily: 'Retail Heavy, Montserrat, sans-serif',
+                fontWeight: 900,
+                lineHeight: '0.9'
+              }}
+            >
+              <span className="text-white">Best</span>
+              <br />
+              <span className="relative inline-block">
+                <span className="text-white relative z-10">spots</span>
+                <span 
+                  className="absolute -bottom-2 left-0 w-full h-6 -z-0"
+                  style={{ backgroundColor: '#FBED4F' }}
+                />
+              </span>
+              <span className="text-white"> in</span>
+              <br />
+              <span className="relative inline-block">
+                <span className="relative z-10" style={{ color: '#5ECCAD' }}>Timișoara</span>
+                <span 
+                  className="absolute -bottom-2 left-0 w-full h-6 -z-0"
+                  style={{ backgroundColor: '#4AA5FF' }}
+                />
+              </span>
+            </h1>
+          </div>
         </div>
       </section>
 
