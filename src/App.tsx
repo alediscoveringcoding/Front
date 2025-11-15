@@ -5,8 +5,9 @@ import { Events } from './components/Events';
 import { BestSpots } from './components/BestSpots';
 import { MapPage } from './components/MapPage';
 import { Contact } from './components/Contact';
+import { Auth } from './components/Auth';
 
-export type Page = 'home' | 'events' | 'spots' | 'map' | 'contact';
+export type Page = 'home' | 'events' | 'spots' | 'map' | 'contact' | 'auth';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -23,6 +24,8 @@ export default function App() {
         return <MapPage onNavigate={setCurrentPage} />;
       case 'contact':
         return <Contact onNavigate={setCurrentPage} />;
+      case 'auth':
+        return <Auth onNavigate={setCurrentPage} />;
       default:
         return <Home onNavigate={setCurrentPage} />;
     }

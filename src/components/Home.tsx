@@ -24,6 +24,12 @@ export function Home({ onNavigate }: HomeProps) {
         <header className="relative z-20 flex items-center justify-end px-20 py-10">
           <div className="flex items-center gap-4">
             <button
+              onClick={() => onNavigate('auth')}
+              className="text-white px-8 py-4 rounded-full hover:opacity-90 transition-all text-lg border-2 border-white/30"
+            >
+              Login
+            </button>
+            <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white px-8 py-4 rounded-full hover:opacity-90 transition-all text-lg"
               style={{ backgroundColor: '#5ECCAD' }}
