@@ -207,46 +207,57 @@ export function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-24 md:py-32 overflow-hidden" style={{
-        background: 'linear-gradient(135deg, #5ECCAD 0%, #4AA5FF 100%)'
+      <section className="relative py-32 md:py-40 overflow-hidden" style={{
+        background: 'linear-gradient(135deg, #7C80F6 0%, #FC87F6 50%, #FF2E1E 100%)'
       }}>
-        <div className="absolute inset-0 rounded-full blur-3xl opacity-20" style={{ backgroundColor: '#7C80F6' }} />
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full blur-3xl opacity-30" style={{ backgroundColor: '#FBED4F' }} />
+        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full blur-3xl opacity-20" style={{ backgroundColor: '#4AA5FF' }} />
         <div className="container mx-auto px-6 md:px-12 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-white text-4xl md:text-6xl leading-tight text-center">
-              100+ adrese alese special care te așteaptă să fie descoperite
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-white text-5xl md:text-7xl mb-6 leading-tight" style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900 }}>
+              Descoperă Timișoara<br />
+              cu noi
             </h2>
-            <p className="text-white/90 text-xl md:text-2xl mb-10 leading-relaxed">
-              Ghidul tău de încredere pentru cele mai bune experiențe culinare din Timișoara
+            <p className="text-white/95 text-2xl md:text-3xl leading-relaxed max-w-3xl mx-auto">
+              100+ locuri speciale te așteaptă
             </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="relative py-16 md:py-20 overflow-hidden" style={{
-        background: 'linear-gradient(135deg, #FC87F6 0%, #FF2E1E 100%)'
+      <footer className="relative py-20 md:py-24 overflow-hidden" style={{
+        backgroundColor: '#1F2937'
       }}>
-        <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 opacity-30" style={{ backgroundColor: '#FBED4F' }} />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent opacity-50" />
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-white text-lg md:text-xl mb-8 leading-relaxed">
-              O inițiativă dedicată promovării celor mai bune experiențe culinare din Timișoara - calitate, autenticitate și inovație
+            <div className="mb-8">
+              <span className="text-6xl md:text-7xl" style={{ fontFamily: 'Retail Heavy, Montserrat, sans-serif', fontWeight: 900, color: '#FBED4F' }}>
+                CeFacemDiseara?
+              </span>
+            </div>
+            <p className="text-gray-300 text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
+              Ghidul tău pentru cele mai bune experiențe culinare din Timișoara
             </p>
             <button
               onClick={() => onNavigate('contact')}
-              className="bg-white/20 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-full hover:bg-white transition-all text-lg"
-              style={{}}
+              className="px-10 py-4 rounded-full transition-all text-lg border-2"
+              style={{ 
+                backgroundColor: '#FBED4F',
+                color: '#1F2937',
+                borderColor: '#FBED4F'
+              }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#FCFAF5';
-                e.currentTarget.style.color = '#FC87F6';
+                e.currentTarget.style.backgroundColor = 'transparent';
+                e.currentTarget.style.color = '#FBED4F';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
-                e.currentTarget.style.color = 'white';
+                e.currentTarget.style.backgroundColor = '#FBED4F';
+                e.currentTarget.style.color = '#1F2937';
               }}
             >
-              Get in Touch
+              Contactează-ne
             </button>
           </div>
         </div>
